@@ -7,15 +7,15 @@ const app = express();
 app.use(cors());
 
 app.use(express.json()); // When we want to be able to accept JSON.
+const ctrl = require('./controller')
 
 app.get('/', function(req,res){
     res.sendFile(path.join(__dirname,"../index.html"))
 })
 app.get('/js', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.js'))
+    res.sendFile(path.join(__dirname, '/index.js'))
   })
 
-const ctrl = require('./controller')
 app.get('/css', (req, res) => {
     res.sendFile(path.join(__dirname, '../styles.css'))
   })
