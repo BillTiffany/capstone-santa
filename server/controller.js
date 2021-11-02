@@ -31,8 +31,10 @@ module.exports = {
 
             let index = gift.findIndex((elem) => +elem.id=== +id)
             if(type === 'plus'){
-                console.log(gift[index])
-                let newPrice = gift[index].price += 1 
+                console.log(gift[index].price)
+                let asdf = +gift[index].price
+                newPrice = asdf += 1 
+                // newPrice = gift[index].price += 1 
                 let newPriceString = newPrice.toFixed(2)
                 gift[index].price = parseFloat(newPriceString)
                 res.status(200).send(gift)
@@ -40,7 +42,8 @@ module.exports = {
                 gift[index].price = 0
                 res.status(200).send(gift)
             }else if(type === 'minus'){
-                let newPrice = gift[index].price -= 1.00
+                console.log(gift[index].price)
+                let newPrice = gift[index].price -= 1
                 let newPriceString = newPrice.toFixed(2)
                 gift[index].price = parseFloat(newPriceString)
                 res.status(200).send(gift)

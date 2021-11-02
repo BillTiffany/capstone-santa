@@ -26,8 +26,8 @@ app.post('/api/gift', ctrl.creategift)
 app.put('/api/gift/:id', ctrl.updategift)
 
 
-app.get("/api/compliment", (req, res) => {
-  const compliments = ["LED Lights Kit",
+app.get("/api/girl", (req, res) => {
+  const girls = ["LED Lights Kit",
 					 "Tie Dye Throw Blanket",
 					 "Illuminated Doodle Pillowcase.",
                      "Butterfly Claw Clips",
@@ -45,7 +45,7 @@ app.get("/api/compliment", (req, res) => {
                      "Solo Drawing Game",
                      "Velvet Hair Scrunchies",
                      "Gothic Number Necklace",
-                     "Compliment Pencil Set",
+                     "girl Pencil Set",
                      "DIY Alphabet Bead Bracelet Making Kit",
                      "Unicorn Hooded Bathrobe",
                      "JoJo Siwa Cosmetic Organizer",
@@ -59,10 +59,10 @@ app.get("/api/compliment", (req, res) => {
   ];
 
 
-  let randomIndex = Math.floor(Math.random() * compliments.length);
-  let randomCompliment = compliments[randomIndex];
+  let randomIndex = Math.floor(Math.random() * girls.length);
+  let randomgirl = girls[randomIndex];
 
-  res.status(200).send(randomCompliment);
+  res.status(200).send(randomgirl);
   
   
 });
