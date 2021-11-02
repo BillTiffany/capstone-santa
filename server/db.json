@@ -2,25 +2,25 @@
     {
       "id": 1,
       "item": "How to Code: A Step-By-Step Guide",
-      "price": 11.59,
+      "price": 12,
       "imageURL" : "https://images-na.ssl-images-amazon.com/images/I/81mT0cKE0oL.jpg"
     },
     {
       "id": 2,
       "item": "Fire HD 10 Kids Tablet",
-      "price": 99.99,
+      "price": 100,
       "imageURL" : "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1628862855-best-gifts-for-boys-amazon-fire-1628862844.jpg?crop=1xw:1xh;center,top&resize=768:*"
     },
     {
       "id": 3,
       "item": "Bill Nye's VR Science Kit",
-      "price": 64.99,
+      "price": 65,
       "imageURL" : "https://m.media-amazon.com/images/I/91uHLPJrzrL._AC_SX425_.jpg"
     },
     {
       "id": 4,
       "item": "Mini Fridge",
-      "price": 49.99,
+      "price": 49,
       "imageURL" : "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1620150854-310D4yAqxOL._SL500_.jpg?crop=1xw:1.00xh;center,top&resize=768:*"
     },
     {
@@ -32,55 +32,55 @@
     {
     "id": 6,
     "item": "Moon Lamp",
-    "price": 23.99,
+    "price": 24,
     "imageURL" : "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1605725640-614jnc4fCbL.jpg?crop=1xw:1.00xh;center,top&resize=768:*"
     },
     {
     "id": 7,
     "item": "Professional Printing 3D Pen with OLED Display",
-    "price": 59.99,
+    "price": 60,
     "imageURL" : "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1620157431-51JIgroaSRL._SL500_.jpg?crop=1xw:1.00xh;center,top&resize=768:*"
     },
     {
     "id": 8,
     "item": "Retro Gaming Airpods Pro Case",
-    "price": 14.99,
+    "price": 15,
     "imageURL" : "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1620226410-31Bz46n0vgL._SL500_.jpg?crop=1xw:1.00xh;center,top&resize=768:*"
     },
     {
     "id": 9,
     "item": "Gooseneck Bed Phone Holder",
-    "price": 17.99,
+    "price": 18,
     "imageURL" : "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1620158861-31KU-kRsjiL._SL500_.jpg?crop=1xw:1.00xh;center,top&resize=768:*"
     },
     {
     "id": 10,
     "item": "The Original Bedside Shelf",
-    "price": 49.99,
+    "price": 50,
     "imageURL" : "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1620156247-519Xc-0QC2L._SL500_.jpg?crop=1xw:1.00xh;center,top&resize=768:*"
     },
     {
     "id": 11,
     "item": "Bluetooth Keyboard",
-    "price": 29.99,
+    "price": 30,
     "imageURL" : "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1634767286-41lZU6jg5yL._SL500_.jpg?crop=1xw:1.00xh;center,top&resize=768:*"
     },
     {
     "id": 12,
     "item": "Wireless Bluetooth Karaoke Microphone",
-    "price": 29.99,
+    "price": 30,
     "imageURL" : "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1576596689-41OouZ1hGtL.jpg?crop=1xw:1.00xh;center,top&resize=768:*"
     },
     {
     "id": 13,
     "item": "Lighted Vanity Makeup Mirror",
-    "price": 25.49,
+    "price": 26,
     "imageURL" : "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1605726874-418lDBrIrWL.jpg?crop=0.992xw:0.764xh;0.00260xw,0.0360xh&resize=768:*"
     },
     {
     "id": 14,
     "item": "Bluetooth Beanie",
-    "price": 17.98,
+    "price": 18,
     "imageURL" : "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1628863644-41di796yWTL._SL500_.jpg?crop=0.982xw:1xh;center,top&resize=768:*"
     },
     {
