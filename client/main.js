@@ -1,7 +1,7 @@
 const giftContainer = document.querySelector('#gift-container')
 const form = document.getElementById('giftForm')
 
-const baseURL = `http://localhost:4000/api/gift`
+const baseURL = `/api/gift`
 
 const giftCallback = ({ data: gift }) => displaygift(gift)
 const errCallback = err => console.log(err)
