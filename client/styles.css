@@ -198,7 +198,7 @@ header {
     border-radius: 0;
     padding: 0;
     font-size: 38px;
-    transition: none;
+    height: 100%;
 }
 .cart {
     background: rgb(255,0,0);
@@ -457,14 +457,8 @@ header {
     p {
         margin-left: 200px;
         font-size: 20px;
+        letter-spacing: 1px;
     }
-
-    .box__dragndrop,
-.box__uploading,
-.box__success,
-.box__error {
-  display: none;
-}
 
 nav:active {
     transform: scale(.9, .9);

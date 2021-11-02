@@ -30,20 +30,23 @@ module.exports = {
             const {type} = req.body
 
             let index = gift.findIndex((elem) => +elem.id=== +id)
-    if(type === 'plus'){
-        gift[index].price += 1 
-        Math.round(gift[index].price * 100) / 100 
-        // gift[index].price += 1.00
-        res.status(200).send(gift)
-    }else if(gift[index].price < 1 && type === 'minus'){
-        gift[index].price = 0
-        res.status(200).send(gift)
-    }else if(type === 'minus'){
-        gift[index].price -= 1.00
-        res.status(200).send(gift)
-    }else {
-        res.status(400).send("you broke it Cartman")
-    }
+            if(type === 'plus'){
+                console.log(gift[index])
+                let newPrice = gift[index].price += 1 
+                let newPriceString = newPrice.toFixed(2)
+                gift[index].price = parseFloat(newPriceString)
+                res.status(200).send(gift)
+            }else if(gift[index].price < 1 && type === 'minus'){
+                gift[index].price = 0
+                res.status(200).send(gift)
+            }else if(type === 'minus'){
+                let newPrice = gift[index].price -= 1.00
+                let newPriceString = newPrice.toFixed(2)
+                gift[index].price = parseFloat(newPriceString)
+                res.status(200).send(gift)
+            }else {
+                res.status(400).send("you broke it Cartman")
+            }
     }
 }
 
