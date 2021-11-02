@@ -13,6 +13,10 @@ const updategift = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(gift
 let resetBtn = document.querySelector('.reset-btn')
 let cartCountText = document.querySelector("#cart-count")
 let count = 0;
+let signUpBtn = document.querySelector('#sign-up')
+let signUpForm = document.querySelector('.email-sign-up')
+let footer = document.querySelector('footer')
+let emailInput = document.querySelector('.emailIn');
 
 function submitHandler(e) {
     e.preventDefault()
@@ -39,10 +43,10 @@ function creategiftCard(gift) {
     giftCard.classList.add('gift-card')
     
     giftCard.innerHTML = `<img alt='gift cover image' src=${gift.imageURL} class="gift-cover-image"/>
-    <p class="item">${gift.item}</p>
+    <h4 class="item">${gift.item}</h4>
     <div class="btns-container">
     <button class = "minus" onclick="updategift(${gift.id}, 'minus')">-</button>
-    <p class="gift-price">$${gift.price}</p>
+    <h4 class="gift-price">$${gift.price}</h4>
     <button class = "plus" onclick="updategift(${gift.id}, 'plus')">+</button>
     </div>
     <button onclick="deletegift(${gift.id})">delete</button>
@@ -84,5 +88,12 @@ function resetCart() {
     cartCountText.textContent = count + ' items';
 }
 
+function emailSubmitHandler(){
+    var confirmationMsg = document.createElement('p')
+    confirmationMsg.textContent = "Thank you for entering your email address, " + emailInput.value;
+    signUpForm.remove();
+    footer.appendChild(confirmationMsg);
+  }
 
+signUpBtn.addEventListener('click', emailSubmitHandler);
 resetBtn.addEventListener("click", resetCart);

@@ -6,7 +6,7 @@ const app = express();
 
 app.use(cors());
 
-app.use(express.json()); // When we want to be able to accept JSON.
+app.use(express.json()); 
 const ctrl = require('./controller')
 
 app.get('/', function(req,res){
@@ -58,7 +58,7 @@ app.get("/api/compliment", (req, res) => {
                      "Custom Journal",
   ];
 
-  // choose random compliment
+
   let randomIndex = Math.floor(Math.random() * compliments.length);
   let randomCompliment = compliments[randomIndex];
 
@@ -93,7 +93,7 @@ app.get("/api/gifts", (req, res) => {
            "Do something nice for a friend today"
   ];
 
-  // choose random gift
+
   let randomIndex = Math.floor(Math.random() * gifts.length);
   let randomgifts = gifts[randomIndex];
 
@@ -149,7 +149,7 @@ app.get("/api/fortune", (req, res) => {
 
   ];
 
-  // choose random fortune
+
   let randomIndex = Math.floor(Math.random() * fortunes.length);
   let randomFortunes = fortunes[randomIndex];
 

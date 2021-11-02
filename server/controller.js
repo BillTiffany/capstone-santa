@@ -1,5 +1,5 @@
 const gift = require('./db.json')
-let globalId = 14
+let globalId = 17
 
 module.exports = {
     getgift: (req,res) =>{
@@ -31,13 +31,15 @@ module.exports = {
 
             let index = gift.findIndex((elem) => +elem.id=== +id)
     if(type === 'plus'){
-        gift[index].price += 1
+        gift[index].price += 1 
+        Math.round(gift[index].price * 100) / 100 
+        // gift[index].price += 1.00
         res.status(200).send(gift)
     }else if(gift[index].price < 1 && type === 'minus'){
         gift[index].price = 0
         res.status(200).send(gift)
     }else if(type === 'minus'){
-        gift[index].price -= 1
+        gift[index].price -= 1.00
         res.status(200).send(gift)
     }else {
         res.status(400).send("you broke it Cartman")

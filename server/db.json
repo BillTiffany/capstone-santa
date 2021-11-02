@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "item": "How to Code: A Step-By-Step Guide to Computer Coding",
+      "item": "How to Code: A Step-By-Step Guide",
       "price": 11.59,
       "imageURL" : "https://images-na.ssl-images-amazon.com/images/I/81mT0cKE0oL.jpg"
     },
@@ -76,6 +76,24 @@
     "item": "Lighted Vanity Makeup Mirror",
     "price": 25.49,
     "imageURL" : "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1605726874-418lDBrIrWL.jpg?crop=0.992xw:0.764xh;0.00260xw,0.0360xh&resize=768:*"
+    },
+    {
+    "id": 14,
+    "item": "Bluetooth Beanie",
+    "price": 17.98,
+    "imageURL" : "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1628863644-41di796yWTL._SL500_.jpg?crop=0.982xw:1xh;center,top&resize=768:*"
+    },
+    {
+    "id": 15,
+    "item": "Color Chemistry Set",
+    "price": 15,
+    "imageURL" : "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1628865029-best-gifts-for-boys-color-chemistry-1628865012.jpg?crop=1xw:1xh;center,top&resize=768:*"
+    },
+    {
+    "id": 16,
+    "item": "Boost Creative Toolbox",
+    "price": 160,
+    "imageURL" : "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1634655516-71761youryl-ac-sl1000-1634655498.jpg?crop=0.8894523326572008xw:1xh;center,top&resize=768:*"
     }
   
   ]
