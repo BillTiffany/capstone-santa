@@ -41,9 +41,9 @@ function creategiftCard(gift) {
     giftCard.innerHTML = `<img alt='gift cover image' src=${gift.imageURL} class="gift-cover-image"/>
     <p class="item">${gift.item}</p>
     <div class="btns-container">
-    <button onclick="updategift(${gift.id}, 'minus')">-</button>
+    <button class = "minus" onclick="updategift(${gift.id}, 'minus')">-</button>
     <p class="gift-price">$${gift.price}</p>
-    <button onclick="updategift(${gift.id}, 'plus')">+</button>
+    <button class = "plus" onclick="updategift(${gift.id}, 'plus')">+</button>
     </div>
     <button onclick="deletegift(${gift.id})">delete</button>
     <button class="bagadd">Add item to Santa's bag</button>
@@ -83,5 +83,6 @@ function resetCart() {
     count = 0;
     cartCountText.textContent = count + ' items';
 }
+
 
 resetBtn.addEventListener("click", resetCart);

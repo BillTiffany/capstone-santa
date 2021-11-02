@@ -133,7 +133,7 @@ header {
   
   .gift-card {
     background: rgb(250,250,250);
-background: linear-gradient(21deg, rgba(250,250,250,1) 0%, rgb(122, 34, 34) 4%, rgba(250,250,250,1) 9%, rgba(255,0,0,1) 15%, rgba(250,250,250,1) 20%, rgba(255,0,0,1) 25%, rgba(250,250,250,1) 30%, rgba(255,0,0,1) 35%, rgba(250,250,250,1) 40%, rgba(255,0,0,1) 45%, rgba(250,250,250,1) 50%, rgba(255,0,0,1) 55%, rgba(250,250,250,1) 61%, rgba(255,0,0,1) 66%, rgba(250,250,250,1) 71%, rgba(255,0,0,1) 76%, rgba(250,250,250,1) 81%, rgba(255,0,0,1) 86%, rgba(250,250,250,1) 91%, rgba(255,0,0,1) 96%, rgba(250,250,250,1) 99%);
+    background: linear-gradient(21deg, rgba(250,250,250,1) 0%, rgb(122, 34, 34) 4%, rgba(250,250,250,1) 9%, rgba(255,0,0,1) 15%, rgba(250,250,250,1) 20%, rgba(255,0,0,1) 25%, rgba(250,250,250,1) 30%, rgba(255,0,0,1) 35%, rgba(250,250,250,1) 40%, rgba(255,0,0,1) 45%, rgba(250,250,250,1) 50%, rgba(255,0,0,1) 55%, rgba(250,250,250,1) 61%, rgba(255,0,0,1) 66%, rgba(250,250,250,1) 71%, rgba(255,0,0,1) 76%, rgba(250,250,250,1) 81%, rgba(255,0,0,1) 86%, rgba(250,250,250,1) 91%, rgba(255,0,0,1) 96%, rgba(250,250,250,1) 99%);
     width: 300px;
     margin: 20px; 
     display: flex;
@@ -154,10 +154,6 @@ background: linear-gradient(21deg, rgba(250,250,250,1) 0%, rgb(122, 34, 34) 4%, 
     background-color: snow;
   }
   
-  .gift-price {
-    font-size: 15px;
-    margin: 5px 0;
-  }
   
   .btns-container {
     width: 100%; 
@@ -243,4 +239,22 @@ background: linear-gradient(21deg, rgba(250,250,250,1) 0%, rgb(122, 34, 34) 4%, 
   #cart-count {
       padding-top: 10px;
       font-size: 30px ;
+  }
+
+  .item{
+      font-size: 25px;
+  }
+
+  .plus {
+      text-align: center;
+      padding-right:20px;
+      height: 30px;
+      margin-top: 40px;
+  }
+
+  .minus {
+    text-align: center;
+    padding-right:20px;
+    height: 30px;
+    margin-top: 40px;
   }
