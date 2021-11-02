@@ -18,62 +18,69 @@
       <section class='cart'>
         <img src="https://cdn-icons-png.flaticon.com/512/1359/1359029.png" id="shop-cart"/> 
         <span id="cart-count">0 items </span>
-          <button class="reset-btn">Empty Bag</button>
-          </section>
-      <header id="giftsheader">
+        <button class="reset-btn">Empty Bag</button>
+    </section>
+    <header id="giftsheader">
         <h1><u>Click here for a Message From Santa</u></h1>
     </header>
     <button id="girlGift">Get a gift Idea(girl)</button>
     <button id ="boyGift">Get a gift Idea(boy)</button>
-  <br>
-  <header class ="list-head">These are popular gift item ideas. keep the ones you like and delete the ones you don't</header>
-  
-  <main>
-    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js">
-    </script> -->
-    <script>
-      document.getElementById("girlGift").onclick = function () {
-        axios.get("http://localhost:4000/api/compliment/")
-            .then(function (response) {
-              const data = response.data;
-              alert(data);
-            });
-      };
-      
-      document.getElementById("giftsheader").onclick = function () {
-        axios.get("http://localhost:4000/api/gifts/")
-            .then(function (response) {
-              const data = response.data;
-              alert(data);
-            });
-      };
+    <br>
+    <header class ="list-head">These are popular gift item ideas. keep the ones you like and delete the ones you don't</header>
     
+    <main>
+        <!-- <script src="https://unpkg.com/axios/dist/axios.min.js">
+        </script> -->
+        <script>
+            document.getElementById("girlGift").onclick = function () {
+                axios.get("http://localhost:4000/api/compliment/")
+                .then(function (response) {
+                    const data = response.data;
+                    alert(data);
+                });
+            };
+            
+            document.getElementById("giftsheader").onclick = function () {
+                axios.get("http://localhost:4000/api/gifts/")
+                .then(function (response) {
+                    const data = response.data;
+                    alert(data);
+                });
+            };
+            
       
-      document.getElementById("boyGift").onclick = function () {
-        axios.get("http://localhost:4000/api/fortune/")
-            .then(function (response) {
-              const data = response.data;
-              alert(data);
-            });
-      };
-      </script>
+            document.getElementById("boyGift").onclick = function () {
+                axios.get("http://localhost:4000/api/fortune/")
+                .then(function (response) {
+                    const data = response.data;
+                    alert(data);
+                });
+            };
+            </script>
       <form id ='giftForm'>
-        <input 
-            type='text'
-            id="item"
-            placeholder="What gift do you want most?"/>
-        <input 
-            type='text'
-            id="price"
-            placeholder='How much does it cost?'/>
-        <input 
-            type='text'
-            id="img"
-            placeholder='paste a picture of your gift'/>
-        <button>Add to Your Christmas list</button>
-    </form>
-    <section id="gift-container"></section>
-</main>
+          <input 
+          type='text'
+          id="item"
+          placeholder="What gift do you want most?"/>
+          <input 
+          type='text'
+          id="price"
+          placeholder='How much does it cost?'/>
+          <input 
+          type='text'
+          id="img"
+          placeholder='paste a picture of your gift'/>
+          <button class="clist">Add to Your Christmas list</button>
+        </form>
+        <section id="gift-container"></section>
+    </main>
+    <aside class="left-side-nav">
+        <ol>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ol>
+    </aside>
 <footer id="red-footer">
     <div class="foot-container"></div>
 </footer>

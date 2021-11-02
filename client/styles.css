@@ -61,16 +61,17 @@ header {
   
   button {
     text-shadow: 0 0 10px #ff0000, 2px 2px 2px rgba(252, 4, 4, 0);
-    background-color: #232323;
     font-family: 'Irish Grover', cursive;
     border-radius: 15px;
     font-size: 20px;
     width: 100px;
+    padding: 5px;
     background: rgb(255,0,0);
     background: linear-gradient(180deg, rgba(255,0,0,1) 10%, rgba(240,240,240,1) 84%, rgba(250,250,250,1) 100%);
     border: none;
-    margin: 20px;
+    margin: 15px;
     align-items: center;
+    text-align: center;
     -webkit-box-shadow: 2px 5px 9px 0px rgba(0,0,0,0.83); 
     box-shadow: 2px 5px 9px 0px rgba(0,0,0,0.83);
     border: white 2px solid;
@@ -177,11 +178,13 @@ header {
 
   .gift-price {
     text-align: center;
+    max-width: max-content;
     background-color: white;
     border-radius: 25px;
     font-family: 'Ephesis', cursive;
     font-size: 30px;
-    border: darkgray solid 1px;
+    border: red solid 2px;
+    padding-right: 10px;
     -webkit-box-shadow: 2px 5px 9px 0px rgba(0,0,0,0.83); 
     box-shadow: 2px 5px 9px 0px rgba(0,0,0,0.83);
   }
@@ -246,15 +249,31 @@ header {
   }
 
   .plus {
-      text-align: center;
-      padding-right:20px;
-      height: 30px;
-      margin-top: 40px;
+    text-align: center;
+    padding-right:20px;
+    height: 50px;
+    margin-top: 30px;
+    font-weight: bold; 
   }
 
   .minus {
     text-align: center;
     padding-right:20px;
-    height: 30px;
-    margin-top: 40px;
+    height: 50px;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+
+  .clist {
+      height: 110px;
+      margin: 20px auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .left-side-nav {
+      background-color: red;
+      height: 200px;
+      float: left;
   }
