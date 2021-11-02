@@ -10,15 +10,16 @@ app.use(express.json());
 const ctrl = require('./controller')
 
 app.get('/', function(req,res){
-    res.sendFile(path.join(__dirname,"../index.html"))
+  res.sendFile(path.join(__dirname,"../index.html"))
 })
-app.get('/js', (req, res) => {
-    res.sendFile(path.join(__dirname, 'server/index.js'))
-  })
 
 app.get('/css', (req, res) => {
-    res.sendFile(path.join(__dirname, '../styles.css'))
-  })
+  res.sendFile(path.join(__dirname, '../styles.css'))
+})
+
+app.get('/js', (req, res) => {
+  res.sendFile(path.join(__dirname, '../index.js'))
+})
 
 app.delete(`/api/gift/:id`, ctrl.deletegift)
 app.get('/api/gift', ctrl.getgift)
